@@ -1,1 +1,43 @@
-<head>this is my project</head>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The onclick Event</h1>
+
+<p>The onclick event is used to trigger a function when an element is clicked on.</p>
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+
+<body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use-->
+<script src="https://www.gstatic.com/firebasejs/8.4.1/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyARgal_OVzn0SfRppvKXUmgWmnyWru59QI",
+    authDomain: "tw-stock-backtesting.firebaseapp.com",
+    projectId: "tw-stock-backtesting",
+    storageBucket: "tw-stock-backtesting.appspot.com",
+    messagingSenderId: "657392527733",
+    appId: "1:657392527733:web:c144e0ab4f5406cffa4b3c",
+    measurementId: "G-30HSH8E3P0"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  
+</script>
+<script type="text/javascript" src="./main.js"></script>
+</body>
+</html>
